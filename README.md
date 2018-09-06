@@ -3,6 +3,14 @@ Getting to know .onion stuff
 
 # References
 
+## torproject related
+
+[https://gitweb.torproject.org/torspec.git/tree/address-spec.txt]
+
+[https://gitweb.torproject.org/torspec.git/tree/rend-spec-v2.txt]
+
+[https://gitweb.torproject.org/torspec.git/tree/tor-spec.txt]
+
 ## vanity .onion related
 
 [https://github.com/ReclaimYourPrivacy/eschalot]
