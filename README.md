@@ -19,6 +19,10 @@ Getting to know .onion stuff
 
 [https://github.com/cathugger/mkp224o]
 
+[https://gist.github.com/DonnchaC/d6428881f451097f329e]
+
+[https://www.dlitz.net/software/pycrypto/api/current/Crypto.PublicKey.RSA._RSAobj-class.html#exportKey]
+
 ## base32-related
 
 [https://github.com/ademarre/binary-to-text-php]
