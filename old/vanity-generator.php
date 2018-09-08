@@ -63,7 +63,8 @@ $replacements = array(
 );
 $public_key_stripped = strtr($public_key, $replacements);
 $public_key_raw = base64_decode($public_key_stripped);
-$sha1_hash = hash("sha1", $public_key_raw, true);
+$public_key_shifted = substr($public_key_raw, 22);
+$sha1_hash = hash("sha1", $public_key_shifted, true);
 $sha1_80 = substr($sha1_hash, 0, 10);
 
 // base32 encode this
@@ -75,4 +76,4 @@ echo '.';
 $vanity_folder = 'keys' . '/' . substr($vanity_onion, 0, 1) . '/' . substr($vanity_onion, 1, 1);
 @mkdir($vanity_folder, 0775, true);
 file_put_contents($vanity_folder . '/' . $vanity_onion . '-private.key', $private_key);
-file_put_contents($vanity_folder . '/' . $vanity_onion . '-public.key', $public_key);
+file_put_contents($vanity_folder . '/' . $vanity_onion . '-public.pub', $public_key);
